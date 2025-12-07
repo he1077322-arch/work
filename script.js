@@ -482,4 +482,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('SW registration failed: ', registrationError);
             });
         });
-    }
+    }const urlsToCache = [
+    '/index.html', // تم تغيير dashboard.html إلى index.html
+    '/style.css',
+    '/script.js',
+    '/manifest.json',
+    // ...
+];

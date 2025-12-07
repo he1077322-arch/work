@@ -2,7 +2,11 @@
     "name": "فرص عمل - Job Opportunities",
     "short_name": "فرص عمل",
     "description": "منصة التوظيف التفاعلية وإدارة الفرص",
-    "start_url": "/dashboard.html",
+   
+    
+    "start_url": "/index.html", 
+    
+
     "display": "standalone",
     "background_color": "#f4f4f9",
     "theme_color": "#007bff",
