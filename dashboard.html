@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فرص عمل</title>
+    <link rel="icon" href="project-logo.png" type="image/png"> 
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <aside class="sidebar">
+            <nav>
+                <a href="#" class="nav-item active" data-content="main">
+                    <i class="fas fa-home"></i>
+                    <span>الرئيسية</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span>الإشعارات</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="chat">
+                    <i class="fas fa-comments"></i>
+                    <span>الدردشة</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="my-posts">
+                    <i class="fas fa-list-alt"></i>
+                    <span>وظائفي المنشورة</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="publish">
+                    <i class="fas fa-edit"></i>
+                    <span>نشر فرصة عمل</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="profile">
+                    <i class="fas fa-user"></i>
+                    <span>الملف الشخصي</span>
+                </a>
+                
+                <a href="#" class="nav-item" data-content="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>الإعدادات</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="logo-container top-logo-position">
+                <img src="project-logo.png" alt="شعار المشروع" class="logo-icon">
+                <span class="project-name">منصة الوظائف التفاعلية</span>
+            </div>
+            
+            <div class="page-content" id="main-content">
+                
+                <header class="top-header">
+                    <input type="search" id="jobSearchBar" placeholder="ابحث عن وظيفة، مهارة، أو مرتب..." class="search-bar">
+                </header>
+                
+                <div class="filter-controls">
+                    <span class="filter-label"><i class="fas fa-filter"></i> تصفية حسب:</span>
+                    
+                    <button class="filter-btn active" data-filter-type="all">الكل</button>
+                    <button class="filter-btn" data-filter-type="full-time">دوام كامل</button>
+                    <button class="filter-btn" data-filter-type="part-time">دوام جزئي</button>
+                    <button class="filter-btn" data-filter-type="freelance">عمل حر</button>
+
+                    <button class="filter-btn" data-filter-type="remote">عمل عن بعد</button>
+                    <button class="filter-btn" data-filter-type="onsite">من الموقع</button>
+                </div>
+                
+                <section id="content-area">
+                    <div class="job-list-container">
+                        
+                        <div class="job-post-card" data-job-id="static-1" data-job-type="full-time" data-job-location="onsite">
+                            <div class="post-header">
+                                <h3 class="job-title">مطور واجهات أمامية (Front-End)</h3> 
+                                <span class="job-type tag-full-time">دوام كامل</span>
+                            </div>
+                            
+                            <div class="post-details">
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>المكان:</strong> القاهرة، مصر</p> 
+                                <p><i class="fas fa-money-bill-wave"></i> <strong>المرتب:</strong> 15,000 - 20,000 جنيه</p> 
+                                <p><i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> 9:00 صباحاً - 5:00 مساءً</p>
+                            </div>
+
+                            <p class="job-description">
+                                <strong>وصف العمل:</strong> نبحث عن مطور مبدع لتحويل تصميمات UI/UX إلى كود عالي الجودة باستخدام React.
+                            </p>
+                            
+                            <button class="job-apply-btn primary-btn" data-job-id="static-1" data-job-title="مطور واجهات أمامية">
+                                <i class="fas fa-paper-plane"></i> تقديم الآن
+                            </button>
+                        </div>
+                        
+                        <div class="job-post-card" data-job-id="static-2" data-job-type="freelance" data-job-location="remote">
+                            <div class="post-header">
+                                <h3 class="job-title">مصمم جرافيك مستقل</h3> 
+                                <span class="job-type tag-freelance">عمل حر</span>
+                            </div>
+                            
+                            <div class="post-details">
+                                <p><i class="fas fa-map-marker-alt"></i> <strong>المكان:</strong> عمل عن بعد</p> 
+                                <p><i class="fas fa-money-bill-wave"></i> <strong>المرتب:</strong> يحدد حسب المشروع</p> 
+                                <p><i class="fas fa-clock"></i> <strong>ساعات العمل:</strong> مرنة</p>
+                            </div>
+
+                            <p class="job-description">
+                                <strong>وصف العمل:</strong> مطلوب مصمم لتصميم شعارات وهوية بصرية لعملاء جدد بشكل دوري. الخبرة في Adobe Illustrator شرط أساسي.
+                            </p>
+                            
+                            <button class="job-apply-btn primary-btn" data-job-id="static-2" data-job-title="مصمم جرافيك مستقل">
+                                <i class="fas fa-paper-plane"></i> تقديم الآن
+                            </button>
+                        </div>
+                        
+                    </div>
+                </section>
+            </div>
+
+            <div class="page-content hidden" id="notifications-content">
+                <h2><i class="fas fa-bell"></i> الإشعارات</h2>
+                
+                <div class="notifications-list">
+                    <div class="notification-card unread">
+                        <div class="notification-icon success-bg">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="notification-content">
+                            <p class="notification-message">
+                                <strong>تم تقديم طلب جديد</strong> لوظيفة "مطور واجهات أمامية".
+                            </p>
+                            <span class="notification-time">منذ 5 دقائق</span>
+                        </div>
+                        <button class="mark-read-btn" data-id="notif1">تمييز كمقروء</button>
+                    </div>
+
+                    <div class="notification-card">
+                        <div class="notification-icon primary-bg">
+                            <i class="fas fa-reply"></i>
+                        </div>
+                        <div class="notification-content">
+                            <p class="notification-message">
+                                قام <strong>فريق HR</strong> بالرد على طلبك لوظيفة "مصمم جرافيك".
+                            </p>
+                            <span class="notification-time">منذ ساعتين</span>
+                        </div>
+                        <button class="mark-read-btn" data-id="notif2">تمييز كمقروء</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content hidden" id="chat-content">
+                <h2><i class="fas fa-comments"></i> الدردشة</h2>
+                
+                <div class="chat-container">
+                    <div class="chat-sidebar">
+                        <div class="chat-contact active-chat">
+                            <img src="project-logo.png" alt="صورة جهة الاتصال" class="contact-img">
+                            <div>
+                                <p class="contact-name">فريق HR - شركة الأمل</p>
+                                <span class="last-message">مرحباً، هل أنت مستعد للمقابلة؟</span>
+                            </div>
+                        </div>
+                        <div class="chat-contact">
+                            <img src="project-logo.png" alt="صورة جهة الاتصال" class="contact-img">
+                            <div>
+                                <p class="contact-name">محمود أحمد</p>
+                                <span class="last-message">تم إرسال السيرة الذاتية.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-window">
+                        <div class="messages-display">
+                            <div class="message received">مرحباً، هل أنت مستعد للمقابلة؟</div>
+                            <div class="message sent">أهلاً، نعم أنا مستعد!</div>
+                        </div>
+                        <div class="message-input-area">
+                            <input type="text" placeholder="اكتب رسالتك..." class="message-input">
+                            <button class="send-btn primary-btn"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content hidden" id="my-posts-content">
+                <h2><i class="fas fa-list-alt"></i> وظائفي المنشورة</h2>
+                
+                <div class="my-posts-list-container">
+                    <p class="empty-state">سيتم عرض جميع الوظائف التي قمت بنشرها هنا.</p>
+                </div>
+            </div>
+
+            <div class="page-content hidden" id="publish-content">
+                <h2><i class="fas fa-edit"></i> نشر فرصة عمل جديدة</h2>
+                
+                <div class="publish-form-card">
+                    <form id="publishForm">
+                        <div class="form-group-publish">
+                            <label for="jobTitleInput">عنوان الوظيفة</label>
+                            <input type="text" id="jobTitleInput" required>
+                        </div>
+
+                        <div class="form-group-flex">
+                            <div class="form-group-publish flex-item">
+                                <label for="jobTypeSelect">نوع الدوام</label>
+                                <select id="jobTypeSelect" required>
+                                    <option value="full-time">دوام كامل</option>
+                                    <option value="part-time">دوام جزئي</option>
+                                    <option value="freelance">عمل حر</option>
+                                </select>
+                            </div>
+                            <div class="form-group-publish flex-item">
+                                <label for="jobLocationInput">الموقع (أو عمل عن بعد)</label>
+                                <input type="text" id="jobLocationInput" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group-flex">
+                            <div class="form-group-publish flex-item">
+                                <label for="jobSalaryInput">المرتب الشهري (اختياري)</label>
+                                <input type="text" id="jobSalaryInput">
+                            </div>
+                            <div class="form-group-publish flex-item">
+                                <label for="jobHoursInput">ساعات العمل</label>
+                                <input type="text" id="jobHoursInput" required value="8 ساعات يومياً">
+                            </div>
+                        </div>
+
+                        <div class="form-group-publish">
+                            <label for="jobDescriptionInput">وصف ومتطلبات العمل</label>
+                            <textarea id="jobDescriptionInput" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="primary-btn publish-btn">
+                            <i class="fas fa-paper-plane"></i> نشر الفرصة الآن
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="page-content hidden" id="profile-content">
+                <h2><i class="fas fa-user"></i> الملف الشخصي</h2>
+                
+                <div class="profile-card">
+                    <form id="profileForm">
+                        <div class="profile-image-container">
+                            <img src="project-logo.png" alt="صورة المستخدم" class="profile-image" id="profileImage"> 
+                            <label for="imageUpload" class="edit-image-btn">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input type="file" id="imageUpload" style="display: none;" accept="image/*" disabled>
+                        </div>
+
+                        <div class="form-group-profile">
+                            <label for="profileName">الاسم الكامل</label>
+                            <input type="text" id="profileName" value="أحمد محمد" disabled>
+                        </div>
+
+                        <div class="form-group-profile">
+                            <label for="profileEmail">البريد الإلكتروني</label>
+                            <input type="email" id="profileEmail" value="ahmad@example.com" disabled>
+                        </div>
+                        
+                        <div class="form-group-profile">
+                            <label for="profileBio">نبذة شخصية</label>
+                            <textarea id="profileBio" disabled>مطور ويب بخبرة 5 سنوات في إنشاء تطبيقات متجاوبة وعالية الأداء.</textarea>
+                        </div>
+                        
+                        <div class="form-group-profile">
+                            <label for="profilePhone">رقم الهاتف</label>
+                            <input type="text" id="profilePhone" value="01xxxxxxxxx" disabled>
+                        </div>
+
+                        <div class="profile-actions">
+                            <button type="button" id="editProfileBtn" class="primary-btn profile-btn">
+                                <i class="fas fa-edit"></i> تعديل الملف الشخصي
+                            </button>
+                            <button type="submit" id="saveProfileBtn" class="success-btn profile-btn hidden">
+                                <i class="fas fa-save"></i> حفظ التغييرات
+                            </button>
+                            <button type="button" id="cancelEditBtn" class="secondary-btn profile-btn hidden">
+                                <i class="fas fa-times"></i> إلغاء
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="page-content hidden" id="settings-content">
+                <h2><i class="fas fa-cog"></i> الإعدادات</h2>
+                <div class="settings-card">
+                    <h3><i class="fas fa-globe"></i> الإعدادات العامة</h3>
+                    <div class="setting-item">
+                        <span>اللغة</span>
+                        <select class="setting-select">
+                            <option value="ar">العربية</option>
+                            <option value="en">الإنجليزية</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <span>الوضع الليلي (Dark Mode)</span>
+                        <label class="switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    
+                    <hr>
+
+                    <h3><i class="fas fa-lock"></i> إعدادات الأمان</h3>
+                    <div class="setting-item">
+                        <span>كلمة المرور</span>
+                        <button class="settings-btn primary-btn">
+                            تغيير كلمة المرور
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<head>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="app-icon.png">
+    
+</head>
